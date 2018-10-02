@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar color="basic">
+    <ion-title text-center>Explorar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let item of miLista" (click)="openNavDetailsPage(item)" icon-start>
+          <ion-icon [name]="item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
+          {{ item.title }}
+        </button>
+      </ion-list>
+       
+</ion-content>
